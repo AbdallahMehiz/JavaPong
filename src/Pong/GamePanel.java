@@ -79,9 +79,11 @@ public class GamePanel extends JPanel implements Runnable{
         }
 
         if(ball.intersects(paddle1)){
+            ball.xVelocity = ball.xVelocity - 3;
             ball.xVelocity = -ball.xVelocity;
         }
         if(ball.intersects(paddle2)){
+            ball.xVelocity = ball.xVelocity + 3;
             ball.xVelocity = -ball.xVelocity;
         }
 
